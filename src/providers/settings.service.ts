@@ -11,7 +11,7 @@ export class AppSettingsService {
 	public productionAPIRoot = 'https://api.buscaativaescolar.org.br/';
 
 	public availableAPIRoots = [
-		'http://api.busca-ativa-escolar.local/',
+		'http://api.busca-ativa-escolar.test/',
 		'https://api.buscaativaescolar.org.br/',
 		'https://api.testes.buscaativaescolar.org.br/',
 	];

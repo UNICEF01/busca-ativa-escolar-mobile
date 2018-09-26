@@ -73,8 +73,12 @@ export class ConnectivityService {
 			return false;
 		}
 
+		if(navigator.connection && !navigator.connection.type) {
+			return true;
+		}
+
 		if(navigator.connection) {
-			return (this.onlineStatuses.indexOf(navigator.connection.type) !== -1);
+			return (this.onlineStatuses.indexOf(navigator.connection.type) !== -1)
 		}
 
 		return navigator.onLine;
